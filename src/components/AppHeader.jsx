@@ -3,7 +3,6 @@ export default function AppHeader() {
 
     return (
         <header>
-
             <img src="/img/dc-logo.png" alt="" className="header-logo" />
             <nav className="navbar" id="navbar">
 
@@ -20,6 +19,7 @@ export default function AppHeader() {
                 <a href="">SHOP</a>
 
             </nav>
+
         </header>
     )
 }
