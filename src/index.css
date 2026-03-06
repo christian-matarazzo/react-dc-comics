@@ -1,48 +1,52 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+ header {
+     margin-top: 20px;
+     display: flex;
+     justify-content: space-around;
+
+     margin-bottom: 50px;
+ }
 
 
 
 
-header {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    margin: 20px;
-}
+
+ .navbar {
+     font-family: 'Open Sans Variable', sans-serif;
+ }
+
+ .navbar a {
+     color: #46464c;
+     text-decoration: none;
+     font-weight: 600;
+     padding: 20px;
+
+ }
 
 
 
-.navbar {
-    gap: 2rem;
-    font-family: 'Open Sans Variable', sans-serif;
-}
 
-.navbar a {
-    color: #46464c;
-    text-decoration: none;
-    font-weight: 600;
-}
+
+ .navbar a:hover {
+
+     color: #39a1fb;
+     border-bottom: 10px solid #39a1fb;
+     padding-bottom: 80px;
+ }
 
 
 
-.navbar .active {
-    color: #39a1fb;
-    border-bottom: 5px solid #39a1fb;
-
-}
 
 
+ .main {
+     min-height: 10vh;
+     text-align: center;
+     align-items: center;
+     display: flex;
+ }
 
-.Main {
-    background-color: #1c1c1c;
-    min-height: 10vh;
-    align-items: center;
-    display: flex;
-}
-
-.Content {
-    color: white;
-    font-family: 'Open Sans Variable', sans-serif;
-    font-size: 30px;
-    margin-left: 300px;
-}
+ .content {
+     color: white;
+     font-family: 'Open Sans Variable', sans-serif;
+     font-size: 30px;
+     margin-left: 200px;
+ }
