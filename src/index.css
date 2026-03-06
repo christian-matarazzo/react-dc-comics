@@ -50,3 +50,30 @@
      font-size: 30px;
      margin-left: 200px;
  }
+
+
+ .shop-container {
+
+     background-color: #39a1fb;
+     color: white;
+     padding: 50px;
+ }
+
+ .shop-container img {
+
+     width: 100px;
+     height: 100px;
+     object-fit: contain;
+ }
+
+ .shop-container span {
+     margin-left: 10px;
+ }
+
+
+ .background {
+
+     background-image: url(../public/img/footer-bg.jpg);
+
+
+ }

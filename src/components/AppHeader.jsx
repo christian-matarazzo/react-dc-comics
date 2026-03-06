@@ -24,7 +24,7 @@ export default function AppHeader() {
             <img src="/img/dc-logo.png" alt="" className="header-logo" />
 
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+                <div class="container">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
