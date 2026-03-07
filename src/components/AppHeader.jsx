@@ -1,3 +1,6 @@
+import dcHeader from "../assets/img/dc-logo.png"
+
+
 export default function AppHeader() {
 
 
@@ -21,7 +24,7 @@ export default function AppHeader() {
 
 </nav> */}
 
-            <img src="/img/dc-logo.png" alt="" className="header-logo" />
+            <img src={dcHeader} alt="" className="header-logo" />
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container">

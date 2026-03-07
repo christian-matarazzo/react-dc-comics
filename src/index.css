@@ -71,9 +71,23 @@
  }
 
 
- .background {
+ .background-images {
 
      background-image: url(../public/img/footer-bg.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
 
 
+ }
+
+
+ #dc-logo {
+     position: absolute;
+     right: 20%;
+ }
+
+
+ .footer .h5 {
+
+     color: white;
  }
