@@ -24,41 +24,42 @@ export default function AppHeader() {
 
 </nav> */}
 
-            <img src={dcHeader} alt="" className="header-logo" />
+
 
             <nav class="navbar navbar-expand-lg">
-                <div class="container">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <a className="navbar-brand" href=""><img src={dcHeader} alt="" className="header-logo" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a href="">CHARACTERS</a>
-                                <a href="" className='active'>COMICS</a>
-                                <a href="">MOVIES</a>
-                                <a href="">TV</a>
-                                <a href="">GAMES</a>
-                                <a href="">COLLECTIBLES</a>
-                                <a href="">VIDEOS</a>
-                                <a href="">FANS</a>
-                                <a href="">NEWS</a>
-                                <a href="">SHOP</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul className="navbar-nav mb-2 mb-lg-0">
+
+                            <li className="nav-item"><a className="nav-link" href="">CHARACTERS</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">COMICS</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">MOVIES</a></li>
+
+                            <li className="nav-item"> <a className="nav-link" href="">TV</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">GAMES</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">COLLECTIBLES</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">VIDEOS</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">FANS</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">NEWS</a></li>
+
+                            <li className="nav-item"><a className="nav-link" href="">SHOP</a></li>
 
                         </ul>
                     </div>
                 </div>
             </nav>
 
-        </header>
+        </header >
     )
 }

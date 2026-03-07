@@ -1,28 +1,31 @@
  /* HEADER */
- header {
-     margin-top: 20px;
-     display: flex;
-     justify-content: space-around;
-     margin-bottom: 50px;
- }
+
 
  .navbar {
      font-family: 'Open Sans Variable', sans-serif;
  }
 
- .navbar a {
+ .nav-link {
+     position: relative;
      color: #46464c;
      text-decoration: none;
      font-weight: 600;
-     padding: 20px;
-
  }
 
- .navbar a:hover {
+ .nav-link:hover::after {
+     content: " ";
+     background-color: #39a1fb;
+     position: absolute;
+     height: 10px;
+     width: 100%;
+     bottom: -40px;
+     left: 0px;
+ }
+
+ .nav-link a:hover {
 
      color: #39a1fb;
      border-bottom: 10px solid #39a1fb;
-     padding-bottom: 80px;
  }
 
  /* MAIN */
@@ -37,7 +40,6 @@
      color: white;
      font-family: 'Open Sans Variable', sans-serif;
      font-size: 30px;
-     margin-left: 200px;
  }
 
  /* SHOP */
@@ -48,14 +50,22 @@
      padding: 50px;
  }
 
- .shop-container img {
+ .shop-item {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 15px;
+     margin-bottom: 20px;
+ }
 
-     width: 100px;
-     height: 100px;
+ .shop-item img {
+
+     width: auto;
+     height: 50px;
      object-fit: contain;
  }
 
- .shop-container span {
+ .shop-item span {
      margin-left: 10px;
  }
 
@@ -110,4 +120,25 @@
      font-size: 0.9rem;
      color: #959595;
      margin-bottom: 5px;
+ }
+
+ /* SOCIAL FOOTER */
+
+ .social-footer {
+     background-color: #46464c;
+     min-height: 250px;
+ }
+
+ .social-sign {
+     color: white;
+     margin-top: 26px;
+     background-color: #46464c;
+     padding: 10px 5px;
+     border: 3px solid #39a1fb;
+ }
+
+ .follow-us {
+     color: #39a1fb;
+     font-weight: 800;
+
  }

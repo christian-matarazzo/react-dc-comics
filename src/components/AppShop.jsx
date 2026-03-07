@@ -11,26 +11,26 @@ export default function AppShop() {
             <div className="shop-container">
                 <div className="container">
                     <div className="row text-center">
-                        <div className="col-12 col-md-4 col-lg">
+                        <div className="col-12 col-md-6 col-lg shop-item">
                             <img src={digitalComics} alt="Digital Comics" srcset="" />
-                            <span>DIGITAL COMICS</span>
+                            <span class="d-inline-block">DIGITAL COMICS</span>
 
                         </div>
-                        <div className="col-12 col-md-4 col-lg">
+                        <div className="col-12 col-md-4 col-lg shop-item">
                             <img src={merch} alt="Digital Comics" srcset="" />
-                            <span>DC MERCHANDISE</span>
+                            <span class="d-inline-block">DC MERCHANDISE</span>
                         </div>
-                        <div className="col-12 col-md-4 col-lg">
+                        <div className="col-12 col-md-4 col-lg shop-item">
                             <img src={subscription} alt="Digital Comics" srcset="" />
-                            <span>SUBSCRIPTION</span>
+                            <span class="d-inline-block">SUBSCRIPTION</span>
                         </div>
-                        <div className="col-12 col-md-4 col-lg">
+                        <div className="col-12 col-md-4 col-lg shop-item">
                             <img src={shops} alt="Digital Comics" srcset="" />
-                            <span>COMICS SHOP LOCATOR</span>
+                            <span class="d-inline-block">COMICS SHOP LOCATOR</span>
                         </div>
-                        <div className="col-12 col-md-4 col-lg">
+                        <div className="col-12 col-md-4 col-lg shop-item">
                             <img src={powerVisa} alt="Digital Comics" srcset="" />
-                            <span>DC POWER VISA</span>
+                            <span class="d-inline-block">DC POWER VISA</span>
                         </div>
                     </div>
                 </div>
