@@ -4,6 +4,61 @@ import dcHeader from "../assets/img/dc-logo.png"
 export default function AppHeader() {
 
 
+    const elements = [
+        {
+            id: 1,
+            text: "CHARACTERS",
+            url: "#"
+        },
+        {
+            id: 2,
+            text: "COMICS",
+            url: "#"
+        },
+        {
+            id: 3,
+            text: "MOVIES",
+            url: "#"
+        },
+        {
+            id: 4,
+            text: "TV",
+            url: "#"
+        },
+        {
+            id: 5,
+            text: "GAMES",
+            url: "#"
+        },
+        {
+            id: 6,
+            text: "COLLECTIBLES",
+            url: "#"
+        },
+        {
+            id: 7,
+            text: "VIDEOS",
+            url: "#"
+        },
+        {
+            id: 8,
+            text: "FANS",
+            url: "#"
+        },
+        {
+            id: 9,
+            text: "NEWS",
+            url: "#"
+        },
+        {
+            id: 10,
+            text: "SHOP",
+            url: "#"
+        }
+    ]
+
+
+
     return (
         <header>
 
@@ -25,7 +80,6 @@ export default function AppHeader() {
 </nav> */}
 
 
-
             <nav class="navbar navbar-expand-lg">
                 <div class="container d-flex justify-content-between align-items-center">
                     <a className="navbar-brand" href=""><img src={dcHeader} alt="" className="header-logo" /></a>
@@ -35,9 +89,13 @@ export default function AppHeader() {
                     <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul className="navbar-nav mb-2 mb-lg-0">
 
-                            <li className="nav-item"><a className="nav-link" href="">CHARACTERS</a></li>
+                            {elements.map((element) => (
 
-                            <li className="nav-item"><a className="nav-link" href="">COMICS</a></li>
+                                <li key={element.id} className="nav-item"><a className="nav-link" href={element.url}>{element.text}</a></li>
+                            ))}
+
+
+                            {/*                             <li className="nav-item"><a className="nav-link" href="">COMICS</a></li>
 
                             <li className="nav-item"><a className="nav-link" href="">MOVIES</a></li>
 
@@ -53,7 +111,7 @@ export default function AppHeader() {
 
                             <li className="nav-item"><a className="nav-link" href="">NEWS</a></li>
 
-                            <li className="nav-item"><a className="nav-link" href="">SHOP</a></li>
+                            <li className="nav-item"><a className="nav-link" href="">SHOP</a></li> */}
 
                         </ul>
                     </div>
