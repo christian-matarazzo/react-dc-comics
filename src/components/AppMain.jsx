@@ -170,9 +170,9 @@ export default function AppMain() {
                             <h4 className="alert-heading">CURRENT SERIES</h4>
                         </div>
                         <div
-                            className="comics-grid row row-cols-3 row-cols-lg-6 justify-content-center align-items-center g-5 py-5" >
+                            className="comics-grid row row-cols-3 row-cols-lg-6 justify-content-center g-5 py-5" >
                             {comics.map((comic) => (
-                                <div className="col" key={comic.id}><img className="grid-img" src={comic.thumb} alt={comic.title} /><span className="text-white d-block m-2" >{comic.series}</span>
+                                <div className="col" key={comic.id}><img className="grid-img img-fluid" src={comic.thumb} alt={comic.title} /><span className="text-white grid-text" >{comic.series}</span>
                                 </div>
                             ))}
                         </div>

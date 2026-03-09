@@ -22,8 +22,8 @@ export default function AppShop() {
                 <div className="container">
                     <div className="row row-cols-1 row-cols-lg-5 g-4 align-items-center">
                         {shopLinks.map((shopLink) => (
-                            <div className="col d-flex justify-content-center align-items-center shop-item" key={shopLink.id}>
-                                <img src={shopLink.img} alt={shopLink.text} srcset="" className="shop-img" />
+                            <div className="col d-flex justify-content-center align-items-center shop-item" key={shopLink.id} >
+                                <img src={shopLink.img} alt={shopLink.text} srcSet="" className="shop-img" />
                                 <span className="shop-text">{shopLink.text}</span>
                             </div>
                         ))}

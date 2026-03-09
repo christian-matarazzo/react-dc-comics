@@ -37,17 +37,17 @@
 
  .main {
      min-height: 10vh;
-     text-align: center;
-     align-items: center;
      position: relative;
  }
 
  .alert {
-     position: absolute;
+
      color: white;
      background-color: #39a1fb;
      border: none;
-     top: 0;
+     margin-top: -25px;
+     margin-left: 0;
+     display: inline-block;
  }
 
  .comics-grid {
@@ -61,6 +61,14 @@
      object-fit: cover;
      object-position: top;
      display: block;
+     border: none;
+     outline: none;
+
+ }
+
+ .grid-text {
+     max-width: 100px;
+
  }
 
 
