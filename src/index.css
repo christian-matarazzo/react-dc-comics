@@ -74,23 +74,17 @@
      padding: 50px;
  }
 
- .shop-item {
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 15px;
-     margin-bottom: 20px;
- }
 
- .shop-item img {
-
-     width: auto;
-     height: 50px;
+ .shop-img {
+     max-width: 50px;
+     max-height: auto;
      object-fit: contain;
  }
 
- .shop-item span {
-     margin-left: 10px;
+ .shop-text {
+     text-transform: uppercase;
+     max-width: 100px;
+     padding-left: 5px;
  }
 
  /* FOOTER */

@@ -4,34 +4,29 @@ import subscription from "../assets/img/buy-comics-subscriptions.png"
 import shops from "../assets/img/buy-comics-shop-locator.png"
 import powerVisa from "../assets/img/buy-dc-power-visa.svg"
 
+
+const shopLinks = [
+    { id: 1, img: digitalComics, text: "DIGITAL COMICS" },
+    { id: 2, img: merch, text: "DC MERCHANDISE" },
+    { id: 3, img: subscription, text: "SUBSCRIPTION" },
+    { id: 4, img: shops, text: "COMICS SHOP LOCATOR" },
+    { id: 5, img: powerVisa, text: "DC POWER VISA" }
+];
+
+
 export default function AppShop() {
 
     return (
         <section className="shop">
             <div className="shop-container">
                 <div className="container">
-                    <div className="row text-center">
-                        <div className="col-12 col-md-6 col-lg shop-item">
-                            <img src={digitalComics} alt="Digital Comics" srcset="" />
-                            <span class="d-inline-block">DIGITAL COMICS</span>
-
-                        </div>
-                        <div className="col-12 col-md-4 col-lg shop-item">
-                            <img src={merch} alt="Digital Comics" srcset="" />
-                            <span class="d-inline-block">DC MERCHANDISE</span>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg shop-item">
-                            <img src={subscription} alt="Digital Comics" srcset="" />
-                            <span class="d-inline-block">SUBSCRIPTION</span>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg shop-item">
-                            <img src={shops} alt="Digital Comics" srcset="" />
-                            <span class="d-inline-block">COMICS SHOP LOCATOR</span>
-                        </div>
-                        <div className="col-12 col-md-4 col-lg shop-item">
-                            <img src={powerVisa} alt="Digital Comics" srcset="" />
-                            <span class="d-inline-block">DC POWER VISA</span>
-                        </div>
+                    <div className="row row-cols-1 row-cols-lg-5 g-4 align-items-center">
+                        {shopLinks.map((shopLink) => (
+                            <div className="col d-flex justify-content-center align-items-center shop-item" key={shopLink.id}>
+                                <img src={shopLink.img} alt={shopLink.text} srcset="" className="shop-img" />
+                                <span className="shop-text">{shopLink.text}</span>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
