@@ -1,3 +1,6 @@
+import { main } from "@popperjs/core";
+import jumbotron from "../assets/img/jumbotron.jpg"
+
 export default function AppMain() {
     const comics = [
         {
@@ -60,7 +63,7 @@ export default function AppMain() {
             id: 5,
             title: "Batman #56",
             description: "The Dark Knight's looking to drop both the hammer and sickle on the KGBeast. The Russian super-assassin has gone too far, and Batman will stop at nothing to hunt him down. But is the Dark Knight willing to step into the darkness himself to find justice?",
-            thumb: "https://imgs.search.brave.com/3vP5d3cOVOuC0f6Uhm7CkV_qFk5hGj5rE4jK5I6n7dI/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly9jZG4y/LnBlbmd1aW4uY29t/LmF1L2NvdmVycy9v/cmlnaW5hbC83OTYx/OTQzMTM5OTk4Lmpw/Zw",
+            thumb: "https://imgs.search.brave.com/jgxYlrx442aozemzjqdmCsd9DkIkRollJp1T8sG8TfE/rs:fit:720:1106:1/g:ce/aHR0cHM6Ly9veXN0/ZXIuaWduaW1ncy5j/b20vd29yZHByZXNz/L3N0Zy5pZ24uY29t/LzIwMTgvMTAvU1RM/MDk3MDk1LTcyMHgx/MTA2LmpwZw",
             price: "$3.99",
             series: "Batman",
             sale_date: "2018-10-03",
@@ -153,17 +156,32 @@ export default function AppMain() {
             writers: ["Joëlle Jones"],
         },
     ];
-
-
-
-
     return (
-        <main className="bg-dark">
-            <div className="container" id="main-container">
-                <div className="main">
-                    <span className="content"> --&gt; Content goes here &lt;-- </span>  {/* can't use > or < for writing because they are reserved characters so we use a html entity code*/}
+        <main>
+            <div className="jumbotron"> {/* Hero Image */}
+                <img src={jumbotron} alt="jumbotron" className="w-100 img-fluid" />
+            </div>
+            <div className="comics-container bg-dark">
+                <div className="container" id="main-container">
+                    <div className="main">
+                        <div
+                            className="alert alert-primary"
+                            role="alert">
+                            <h4 className="alert-heading">CURRENT SERIES</h4>
+                        </div>
+                        <div
+                            className="comics-grid row row-cols-3 row-cols-lg-6 justify-content-center align-items-center g-5 py-5" >
+                            {comics.map((comic) => (
+                                <div className="col" key={comic.id}><img className="grid-img" src={comic.thumb} alt={comic.title} /><span className="text-white d-block m-2" >{comic.series}</span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="d-flex justify-content-center pb-5">
+                            <button className="btn btn-primary px-5">LOAD MORE</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </main >
     )
 }

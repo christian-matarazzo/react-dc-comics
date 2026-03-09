@@ -56,29 +56,8 @@ export default function AppHeader() {
             url: "#"
         }
     ]
-
-
-
     return (
         <header>
-
-            {/*             <nav className="navbar" id="navbar">
-
-
-<a href="">CHARACTERS</a>
-<a href="" className='active'>COMICS</a>
-<a href="">MOVIES</a>
-<a href="">TV</a>
-<a href="">GAMES</a>
-<a href="">COLLECTIBLES</a>
-<a href="">VIDEOS</a>
-<a href="">FANS</a>
-<a href="">NEWS</a>
-<a href="">SHOP</a>
-
-
-</nav> */}
-
 
             <nav class="navbar navbar-expand-lg">
                 <div class="container d-flex justify-content-between align-items-center">
@@ -93,31 +72,10 @@ export default function AppHeader() {
 
                                 <li key={element.id} className="nav-item"><a className="nav-link" href={element.url}>{element.text}</a></li>
                             ))}
-
-
-                            {/*                             <li className="nav-item"><a className="nav-link" href="">COMICS</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">MOVIES</a></li>
-
-                            <li className="nav-item"> <a className="nav-link" href="">TV</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">GAMES</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">COLLECTIBLES</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">VIDEOS</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">FANS</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">NEWS</a></li>
-
-                            <li className="nav-item"><a className="nav-link" href="">SHOP</a></li> */}
-
                         </ul>
                     </div>
                 </div>
             </nav>
-
         </header >
     )
 }

@@ -29,18 +29,42 @@
  }
 
  /* MAIN */
+ .jumbotron img {
+     height: 500px;
+     object-fit: cover;
+     object-position: top;
+ }
+
  .main {
      min-height: 10vh;
      text-align: center;
      align-items: center;
-     display: flex;
+     position: relative;
  }
 
- .content {
+ .alert {
+     position: absolute;
      color: white;
-     font-family: 'Open Sans Variable', sans-serif;
-     font-size: 30px;
+     background-color: #39a1fb;
+     border: none;
+     top: 0;
  }
+
+ .comics-grid {
+
+     color: white;
+ }
+
+ .grid-img {
+     width: 100%;
+     height: 200px;
+     object-fit: cover;
+     object-position: top;
+     display: block;
+ }
+
+
+
 
  /* SHOP */
  .shop-container {
