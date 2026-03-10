@@ -1,12 +1,11 @@
 
-export default function AppComic({ thumb, title, series }) {
-
+export default function AppComic({ comic }) {
     return (
 
         <div className="col">
             <img className="grid-img img-fluid"
-                src={thumb} alt={title} />
-            <span className="text-white grid-text" >{series}</span>
+                src={comic.thumb} alt={comic.title} />
+            <span className="text-white grid-text" >{comic.series}</span>
         </div>
     );
 

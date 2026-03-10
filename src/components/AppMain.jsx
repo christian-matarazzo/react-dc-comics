@@ -173,9 +173,7 @@ export default function AppMain() {
                             {comics.map((comic) => (
                                 <AppComic
                                     key={comic.id}
-                                    thumb={comic.thumb}
-                                    title={comic.title}
-                                    series={comic.series}
+                                    comic={comic}
                                 />
                             ))}
                         </div>

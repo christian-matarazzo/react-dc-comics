@@ -12,14 +12,16 @@
      font-weight: 600;
  }
 
- .nav-link:hover::after {
-     content: " ";
-     background-color: #39a1fb;
-     position: absolute;
-     height: 10px;
-     width: 100%;
-     bottom: -40px;
-     left: 0px;
+ @media (min-width: 992px) {
+     .nav-link:hover::after {
+         content: " ";
+         background-color: #39a1fb;
+         position: absolute;
+         height: 10px;
+         width: 100%;
+         bottom: -40px;
+         left: 0px;
+     }
  }
 
  .nav-link a:hover {
@@ -27,6 +29,16 @@
      color: #39a1fb;
      border-bottom: 10px solid #39a1fb;
  }
+
+
+ @media (max-width: 991.99px) {
+     .navbar-collapse {
+         text-align: right;
+     }
+ }
+
+
+
 
  /* MAIN */
  .jumbotron img {
