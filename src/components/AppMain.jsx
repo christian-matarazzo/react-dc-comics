@@ -1,6 +1,6 @@
 import { main } from "@popperjs/core";
 import jumbotron from "../assets/img/jumbotron.jpg"
-
+import AppComic from "./AppComic";
 export default function AppMain() {
     const comics = [
         {
@@ -169,11 +169,14 @@ export default function AppMain() {
                             role="alert">
                             <h4 className="alert-heading">CURRENT SERIES</h4>
                         </div>
-                        <div
-                            className="comics-grid row row-cols-3 row-cols-lg-6 justify-content-center g-5 py-5" >
+                        <div className="comics-grid row row-cols-3 row-cols-lg-6 justify-content-center g-5 py-5">
                             {comics.map((comic) => (
-                                <div className="col" key={comic.id}><img className="grid-img img-fluid" src={comic.thumb} alt={comic.title} /><span className="text-white grid-text" >{comic.series}</span>
-                                </div>
+                                <AppComic
+                                    key={comic.id}
+                                    thumb={comic.thumb}
+                                    title={comic.title}
+                                    series={comic.series}
+                                />
                             ))}
                         </div>
                         <div className="d-flex justify-content-center pb-5">

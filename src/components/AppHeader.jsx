@@ -2,8 +2,6 @@ import dcHeader from "../assets/img/dc-logo.png"
 
 
 export default function AppHeader() {
-
-
     const elements = [
         {
             id: 1,
@@ -56,6 +54,8 @@ export default function AppHeader() {
             url: "#"
         }
     ]
+
+
     return (
         <header>
 

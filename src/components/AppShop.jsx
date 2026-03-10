@@ -5,7 +5,6 @@ import subscription from "../assets/img/buy-comics-subscriptions.png"
 import shops from "../assets/img/buy-comics-shop-locator.png"
 import powerVisa from "../assets/img/buy-dc-power-visa.svg"
 
-
 const shopLinks = [
     { id: 1, img: digitalComics, text: "DIGITAL COMICS" },
     { id: 2, img: merch, text: "DC MERCHANDISE" },
@@ -15,8 +14,8 @@ const shopLinks = [
 ];
 
 
-export default function AppShop() {
 
+export default function AppShop() {
     return (
         <section className="shop">
             <div className="shop-container">
